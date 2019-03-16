@@ -1,0 +1,40 @@
+.iframe {
+    position: absolute;
+    top:0;
+    display: block;
+}
+
+.topbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    display: flex;
+}
+
+.menu-sanduwish {
+    display: inline;
+}
+
+.menu-horizontal {
+    justify-content: center;
+}
+
+.menu-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#menuButton {
+    margin-left: 10px;
+}
+
+@media (min-width: 992px) {
+    #navbarNavDropdown {
+        display: none !important;
+    }
+}
+
+
