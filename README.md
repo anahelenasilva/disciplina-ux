@@ -15,6 +15,6 @@ You don't have to download it.
 
 *First Look*
 
-1. Open the file */src/index.html* on yout browser
+1. Open the file */src/index.html* on your browser
 2. That's all.
 
