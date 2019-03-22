@@ -12,5 +12,9 @@ function enviarDivulgacao() {
         alert("Todos os campos são obrigatórios");
     } else {
         alert("Agradecemos a sua divulgação! Entraremos em contato o mais breve possível");
+        $("#txtNome").val('');
+        $("#txtTelefone").val('');
+        $("#txtEmail").val('');
+        $("#txtDescricao").val('');
     }
 }

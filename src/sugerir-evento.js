@@ -1,3 +1,3 @@
 function enviarSugestao() {
-    alert("Sugestão enviada com sucesso!");
+    alert("Obrigado! Sua sugestão foi registrada com sucesso");
 }
