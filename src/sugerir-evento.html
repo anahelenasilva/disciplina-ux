@@ -57,6 +57,7 @@
                             Eventos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Artes Visuais</a>
                             <a class="dropdown-item" href="#">Cinema</a>
                             <a class="dropdown-item" href="#">Esportes</a>
                             <a class="dropdown-item" href="#">Música</a>
@@ -68,11 +69,11 @@
                     </li>
     
                     <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">Divulgação</a>
+                        <a class="nav-link" href="divulgar-evento.html">Divulgação</a>
                     </li>
     
                     <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">Sugestão</a>
+                        <a class="nav-link" href="sugerir-evento.html">Sugestão</a>
                     </li>
     
                     <li class="nav-item menu-item">
@@ -83,11 +84,25 @@
         </nav>
     
         <div class="container form-row mt-4 ml-5">
+            <h6>
+                Selecione abaixo qual tipo de evento você mais curte :) <br>
+                Se não encontrou o tipo que você quer, por favor, informe no campo de texto.
+            </h6>
+
+            <div class="input-group form-group mt-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Artes Visuais</span>
+                    <div class="input-group-text">
+                        <input type="radio" name="sugestao" checked aria-label="Escolha de Teatro">
+                    </div>
+                </div>
+            </div>
+
             <div class="input-group form-group">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Teatro</span>
                     <div class="input-group-text">
-                        <input type="radio" name="sugestao" checked aria-label="Escolha de Teatro">
+                        <input type="radio" name="sugestao" aria-label="Escolha de Teatro">
                     </div>
                 </div>
             </div>
