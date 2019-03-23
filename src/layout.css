@@ -1,0 +1,19 @@
+html[xmlns] .clearfix, html[xmlns] .inner {
+    display: block;
+}
+
+ul.acessibilidade {
+    text-align: left;
+}
+
+ul.acessibilidade li {
+    display: inline;
+}
+
+ul.acessibilidade li a {
+    line-height: 30px;
+    vertical-align: baseline;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
