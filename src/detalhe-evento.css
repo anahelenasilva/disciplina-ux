@@ -1,0 +1,50 @@
+span.classificacao_etaria_wrap {
+    white-space: nowrap;
+    float: right;
+}
+
+span.classificacao_etaria {
+    display: inline-block;
+    vertical-align: middle;
+    *display: inline;
+    zoom: 1;
+    padding: 0 5px;
+    min-width: 15px;
+    height: 25px;
+    margin: 0 0 0 0;
+    *margin: 0 0 -6px 0;
+    color: #fff;
+    text-align: center;
+}
+
+span.classificacao_etaria.livre {
+    background: #23a82f;
+}
+
+.tipo-evento {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 10px;
+    color: #cf2227;
+}
+
+html[xmlns] .clearfix, html[xmlns] .inner {
+    display: block;
+}
+ul.acessibilidade {
+    text-align: left;
+}
+ul.acessibilidade li {
+    display: inline;
+}
+
+ul.acessibilidade li a {
+    line-height: 30px;
+    vertical-align: baseline;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}

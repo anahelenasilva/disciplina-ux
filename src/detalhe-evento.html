@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="divulgar-evento.css" />
+    <link rel="stylesheet" href="detalhe-evento.css" />
 </head>
 
 <body>
@@ -57,6 +57,7 @@
                             Eventos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Artes Visuais</a>
                             <a class="dropdown-item" href="#">Cinema</a>
                             <a class="dropdown-item" href="#">Esportes</a>
                             <a class="dropdown-item" href="#">Música</a>
@@ -83,7 +84,44 @@
         </nav>
     
         <div class="container mt-4 ml-5">
-            
+            <div class="card mb-3 conteudo">
+                <img src="img/eventos/evento1.png" class="card-img-top" alt="Evento de Teste">
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Artes Visuais
+                    </p>
+                    <h5 class="card-title">
+                        Madeira Nova - Jovem xilogravura contemporânea
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos" class="classificacao_etaria livre">L</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        COM CURADORIA DE CÉLIA BARROS
+                    </p>
+                    <ul class="acessibilidade clearfix">
+                        <li style="font-size: 13px;">
+                            <a href="#" title="Diminuir a fonte" class="decrease" rel="decrease-font" style="font-size: 15px;">-A</a>
+                        </li>
+                        <li style="font-size: 13px;">
+                            <a href="#" title="Aumentar a fonte" class="increase" rel="increase-font" style="font-size: 19px;">+A</a>
+                        </li>
+                    </ul>
+                    <p class="card-text">
+                        <strong>Madeira Nova - Jovem xilogravura contemporânea</strong>, com curadoria de Célia Barros. A mostra reúne obras de oito jovens artistas da cena contemporânea da xilogravura.
+                        Todos com pesquisas direcionadas para a imagem em grande formato e oriundos formações artísticas diversas. São eles: Santidio Pereira, Luisa Almeida, Gabriel Balbino, Kamila Vasques, Igor Santos, Julia Bastos, Rafael Toledo e Fernando Melo.
+                        <br><br>
+                        Abertura: 22/03, sexta, às 20h30 com a impressão coletiva de uma xilogravura de grande formato, por meio de um processo performático desenvolvido pela artista Luisa Almeida.
+                        <br><br>
+                        Visitação: de 23/3 a 26/5. Terça a sexta, das 13h30 às 21h30. Sábado, domingo e feriado, das 10h às 18h.<br>
+                        Agendamento de grupos: agendamento@scarlos.sescsp.org.br<br>
+                        Área de convivência interna. Grátis.
+                    </p>
+                    <p class="card-text">
+                        <i class="fas fa-gift"></i> Grátis
+                    </p>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -97,5 +135,32 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        	var limite   = 10,
+                cont     = 0,
+                target   = 'h1, h2, h3, h4, p, blockquote, li, a, span, td, th, section, article, div.conteudo',
+                increase = $("a[rel='increase-font']"),
+                decrease = $("a[rel='decrease-font']"),
+                area = $('.container');
+
+        increase.click(function(){
+            area.find(target).each(function(){
+                var self = $(this), size = parseInt(self.css('font-size').substring(0,2));
+                cont!=limite ? self.css('font-size', (size+1)) : '';
+            });
+            cont!=limite ? cont++ : '';
+            return false;
+        });
+
+        decrease.click(function(){
+            area.find(target).each(function(){
+                var self = $(this), size = parseInt(self.css('font-size').substring(0,2));
+                cont!=0 ? self.css('font-size', (size-1)) : '';
+            });
+            cont!=0 ? cont-- : '';
+            return false;
+        });
+    </script>
 </body>
 </html>
