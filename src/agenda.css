@@ -1,0 +1,13 @@
+#calendar {
+    margin-top: 40px;
+    background-color: white;
+    padding:10px;
+}
+
+    #calendar .fc-title, #calendar .fc-time{
+        color:white;
+    }
+
+.fc-left {
+    text-transform: capitalize;
+}
