@@ -4,6 +4,7 @@ html[xmlns] .clearfix, html[xmlns] .inner {
 
 ul.acessibilidade {
     text-align: left;
+    margin-bottom: 0px;
 }
 
 ul.acessibilidade li {
@@ -16,4 +17,9 @@ ul.acessibilidade li a {
     font-weight: bold;
     text-decoration: none;
     font-size: 15px;
+}
+
+.container {
+    background-color: #fdfdfd;
+    padding:30px;
 }
