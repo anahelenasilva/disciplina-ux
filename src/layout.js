@@ -28,3 +28,7 @@ function acessibilidade() {
 $(document).ready(function(){
     acessibilidade();
 });
+
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+});
