@@ -18,3 +18,5 @@ You don't have to download it.
 1. Open the file */src/index.html* on your browser
 2. That's all.
 
+*Or just enter the link below*
+<https://anahelenasilva.github.io/disciplina-ux/src/>
