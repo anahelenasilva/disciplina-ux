@@ -10,18 +10,18 @@ injectThis(`
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item menu-item">
                 <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item dropdown menu-item">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" aria-controls="navResponsive" id="navbarDropdown" role="menu"
+                    data-toggle="dropdown" aria-expanded="false">
                     Eventos
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu" id="navResponsive">
                     <li class="dropdown-submenu">
                         <a class="dropdown-item" href="./eventos-categoria-cinema.html">Cinema</a>
                         <ul class="dropdown-menu">
@@ -45,7 +45,7 @@ injectThis(`
                             </li>
                             <li class="dropdown-item">
                                 <a class="dropdown-item"
-                                    href="./eventos-categoria-esportes.html">Voley</a>
+                                    href="./eventos-categoria-esportes.html">Vôlei</a>
                             </li>
                             <li class="dropdown-item">
                                 <a class="dropdown-item"
