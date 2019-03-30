@@ -1,5 +1,7 @@
 injectThis(`
-<div class="container form-row mt-4 ml-5 form-sugestao">
+<link rel="stylesheet" href="./css/sugerir-evento.css">
+
+<div class="container">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -7,80 +9,82 @@ injectThis(`
         </ol>
     </nav>
 
-    <div class="mt-5">
-        <h6>
-            Selecione abaixo qual tipo de evento você mais curte :) <br>
-            Se não encontrou o tipo que você quer, por favor, informe no campo de texto.
-        </h6>
-    </div>
-
-    <div class="input-group form-group mt-3">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="rdArtesVisuais" type="radio" name="sugestao" checked aria-label="Artes Visuais">
-            </div>
-            <label for="rdArtesVisuais" class="input-group-text">Artes Visuais</label>
+    <div class="form-row form-sugestao">
+        <div class="mt-5">
+            <h6>
+                Selecione abaixo qual tipo de evento você mais curte :) <br>
+                Se não encontrou o tipo que você quer, por favor, informe no campo de texto.
+            </h6>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="rdTeatro" type="radio" name="sugestao" aria-label="Escolha de Teatro">
+        <div class="input-group form-group mt-3">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="rdArtesVisuais" type="radio" name="sugestao" checked aria-label="Artes Visuais">
+                </div>
+                <label for="rdArtesVisuais" class="input-group-text">Artes Visuais</label>
             </div>
-            <label for="rdTeatro" class="input-group-text">Teatro</label>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="tdMusicais" type="radio" name="sugestao" aria-label="Escolha de Shows Musicais">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="rdTeatro" type="radio" name="sugestao" aria-label="Escolha de Teatro">
+                </div>
+                <label for="rdTeatro" class="input-group-text">Teatro</label>
             </div>
-            <label for="tdMusicais" class="input-group-text">Shows Musicais</label>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="rdCinema" type="radio" name="sugestao" aria-label="Escolha de Cinema">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="tdMusicais" type="radio" name="sugestao" aria-label="Escolha de Shows Musicais">
+                </div>
+                <label for="tdMusicais" class="input-group-text">Shows Musicais</label>
             </div>
-            <label for="rdCinema" class="input-group-text">Cinema</label>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="rdEsporte" type="radio" name="sugestao" aria-label="Escolha de Esporte">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="rdCinema" type="radio" name="sugestao" aria-label="Escolha de Cinema">
+                </div>
+                <label for="rdCinema" class="input-group-text">Cinema</label>
             </div>
-            <label for="rdEsporte" class="input-group-text">Esporte</label>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="tdJogos" type="radio" name="sugestao" aria-label="Escolha de Jogos">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="rdEsporte" type="radio" name="sugestao" aria-label="Escolha de Esporte">
+                </div>
+                <label for="rdEsporte" class="input-group-text">Esporte</label>
             </div>
-            <label for="tdJogos" class="input-group-text">Jogos</label>
         </div>
-    </div>
 
-    <div class="input-group form-group">
-        <div class="input-group-prepend">
-            <div class="input-group-text">
-                <input id="rdOutros" type="radio" name="sugestao" aria-label="Escolha de Outra Categoria">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="tdJogos" type="radio" name="sugestao" aria-label="Escolha de Jogos">
+                </div>
+                <label for="tdJogos" class="input-group-text">Jogos</label>
             </div>
-            <label for="rdOutros" class="input-group-text">Outras</label>
         </div>
-        <input type="text" class="form-control" aria-label="Digite a Outra Categoria" style="width: 250px"
-            placeholder="Digite a Outra Categoria">
-    </div>
 
-    <div class="form-group">
-        <button type="button" onclick="enviarSugestao();" class="btn btn-outline-success">Enviar</button>
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <input id="rdOutros" type="radio" name="sugestao" aria-label="Escolha de Outra Categoria">
+                </div>
+                <label for="rdOutros" class="input-group-text">Outras</label>
+            </div>
+            <input type="text" class="form-control" aria-label="Digite a Outra Categoria" style="width: 250px"
+                placeholder="Digite a Outra Categoria">
+        </div>
+
+        <div class="form-group">
+            <button type="button" onclick="enviarSugestao();" class="btn btn-outline-success">Enviar</button>
+        </div>
     </div>
 </div>
 `,'#bodyinject','./js/sugerir-evento.js');
