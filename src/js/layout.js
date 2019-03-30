@@ -32,3 +32,7 @@ $(document).ready(function(){
 $(window).load(function() {
     $(".loader").fadeOut("slow");
 });
+
+function injectThis(content,target) {
+    $(target).html(content);
+}
