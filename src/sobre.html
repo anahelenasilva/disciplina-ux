@@ -1,89 +1,29 @@
-<!doctype html>
-<html>
+injectThis(`
+<div class="container mt-4 ml-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sobre</li>
+        </ol>
+    </nav>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./css/divulgar-evento.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-</head>
-
-<body>
-    <main role="main" class="flex-shrink-0">
-        <div id="navbar">Loading...</div>
-
-        <div class="container mt-4 ml-5">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sobre</li>
-                </ol>
-            </nav>
-
-            <div class="jumbotron">
-                <h1 class="display-4">Sobre nós</h1>
-                <p class="lead">
-                    Este site de divulgação de eventos foi feito pelos alunos do
-                    curso de Pós Graduação Lato Sensu em Computação - Desenvolvimento de Software para Web,
-                    como parte da disciplina User Experience [para todos] na Web. <br>
-                    Qualquer dúvida, entre em contato conosco em um dos e-mails abaixo: :)
-                </p>
-                <hr class="my-4">
-                <p>
-                    Alunos: <br>
-                    Ana Helena - anahelenarp@hotmail.com<br>
-                    Edson Júnior - edsonsimao@gmail.com <br>
-                    Lourran Zorzi - achimid@hotmail.com <br>
-                    Renê Nucci - rguinucci@hotmail.com<br>
-                    Victor Grechi - victorgrechi@gmail.com<br>
-                </p>
-            </div>
-        </div>
-        <div class=" modal fade modal-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Página de Ajuda</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar Modal"><span
-                                aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <div class="loader"></div>
-
-    <!-- <footer class="footer py-3 mt-auto w-100 bg-light" style="text-align: center;">
-        <span>Divulgação de Eventos da cidade de São Carlos - SP</span>
-    </footer> -->
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <script src="./js/sugerir-evento.js"></script>
-    <script src="./js/layout.js"></script>
-    <script src="./navbar.html" type="text/javascript"></script>
-
-</body>
-
-</html>
+    <div class="jumbotron">
+        <h1 class="display-4">Sobre nós</h1>
+        <p class="lead">
+            Este site de divulgação de eventos foi feito pelos alunos do
+            curso de Pós Graduação Lato Sensu em Computação - Desenvolvimento de Software para Web,
+            como parte da disciplina User Experience [para todos] na Web. <br>
+            Qualquer dúvida, entre em contato conosco em um dos e-mails abaixo: :)
+        </p>
+        <hr class="my-4">
+        <p>
+            Alunos: <br>
+            Ana Helena - anahelenarp@hotmail.com<br>
+            Edson Júnior - edsonsimao@gmail.com <br>
+            Lourran Zorzi - achimid@hotmail.com <br>
+            Renê Nucci - rguinucci@hotmail.com<br>
+            Victor Grechi - victorgrechi@gmail.com<br>
+        </p>
+    </div>
+</div>
+`,'#bodyinject');

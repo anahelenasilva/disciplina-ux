@@ -1,3 +1,5 @@
+var loadingTime = 400;
+
 function acessibilidade() {
     var limite   = 10,
     cont     = 0,
@@ -26,13 +28,51 @@ function acessibilidade() {
 }
 
 $(document).ready(function(){
-    acessibilidade();
+    loadEvents();
 });
 
 $(window).load(function() {
-    $(".loader").fadeOut("slow");
+    load(false);
 });
 
-function injectThis(content,target) {
+function injectThis(content,target,scripts) {
     $(target).html(content);
+    $("#page-script").html('');
+
+    if(scripts) {
+        injectScript(scripts);
+    }
+
+    loadEvents();
+}
+
+function injectScript(path) {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = path;
+    $("#page-script")[0].appendChild(script);
+}
+
+function loadEvents() {
+    $('a').unbind('click');
+    $('a').bind('click', function(e) {
+        var path = $(e.target).attr('href');
+        if(path == '#')
+            return;
+        e.preventDefault();
+        load(true);
+        setTimeout(function() {
+            injectScript(path);
+            load(false); 
+        }, loadingTime) ;
+         
+    });
+    acessibilidade();
+}
+
+function load(show) {
+    if(show) 
+        $(".loader").fadeIn("fast");
+    else
+        $(".loader").fadeOut("medium");    
 }

@@ -1,147 +1,86 @@
-<!doctype html>
-<html>
+injectThis(`
+<div class="container form-row mt-4 ml-5 form-sugestao">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Sugerir Evento</li>
+        </ol>
+    </nav>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <div class="mt-5">
+        <h6>
+            Selecione abaixo qual tipo de evento você mais curte :) <br>
+            Se não encontrou o tipo que você quer, por favor, informe no campo de texto.
+        </h6>
+    </div>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/divulgar-evento.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/sugerir-evento.css" />
-</head>
-
-<body>
-    <main role="main" class="flex-shrink-0">
-        <div id="navbar">Loading...</div>
-
-        <div class="container form-row mt-4 ml-5 form-sugestao">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Sugerir Evento</li>
-                </ol>
-            </nav>
-
-            <div class="mt-5">
-                <h6>
-                    Selecione abaixo qual tipo de evento você mais curte :) <br>
-                    Se não encontrou o tipo que você quer, por favor, informe no campo de texto.
-                </h6>
+    <div class="input-group form-group mt-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="rdArtesVisuais" type="radio" name="sugestao" checked aria-label="Artes Visuais">
             </div>
-
-            <div class="input-group form-group mt-3">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="rdArtesVisuais" type="radio" name="sugestao" checked aria-label="Artes Visuais">
-                    </div>
-                    <label for="rdArtesVisuais" class="input-group-text">Artes Visuais</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="rdTeatro" type="radio" name="sugestao" aria-label="Escolha de Teatro">
-                    </div>
-                    <label for="rdTeatro" class="input-group-text">Teatro</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="tdMusicais" type="radio" name="sugestao" aria-label="Escolha de Shows Musicais">
-                    </div>
-                    <label for="tdMusicais" class="input-group-text">Shows Musicais</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="rdCinema" type="radio" name="sugestao" aria-label="Escolha de Cinema">
-                    </div>
-                    <label for="rdCinema" class="input-group-text">Cinema</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="rdEsporte" type="radio" name="sugestao" aria-label="Escolha de Esporte">
-                    </div>
-                    <label for="rdEsporte" class="input-group-text">Esporte</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="tdJogos" type="radio" name="sugestao" aria-label="Escolha de Jogos">
-                    </div>
-                    <label for="tdJogos" class="input-group-text">Jogos</label>
-                </div>
-            </div>
-
-            <div class="input-group form-group">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">
-                        <input id="rdOutros" type="radio" name="sugestao" aria-label="Escolha de Outra Categoria">
-                    </div>
-                    <label for="rdOutros" class="input-group-text">Outras</label>
-                </div>
-                <input type="text" class="form-control" aria-label="Digite a Outra Categoria" style="width: 250px"
-                    placeholder="Digite a Outra Categoria">
-            </div>
-
-            <div class="form-group">
-                <button type="button" onclick="enviarSugestao();" class="btn btn-outline-success">Enviar</button>
-            </div>
+            <label for="rdArtesVisuais" class="input-group-text">Artes Visuais</label>
         </div>
-        <div class=" modal fade modal-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="myLargeModalLabel">Página de Ajuda</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                </div>
+    </div>
+
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="rdTeatro" type="radio" name="sugestao" aria-label="Escolha de Teatro">
             </div>
+            <label for="rdTeatro" class="input-group-text">Teatro</label>
         </div>
-    </main>
-    <div class="loader"></div>
+    </div>
 
-    <!-- <footer class="footer py-3 mt-auto w-100 bg-light" style="text-align: center;">
-        <span>Divulgação de Eventos da cidade de São Carlos - SP</span>
-    </footer> -->
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="tdMusicais" type="radio" name="sugestao" aria-label="Escolha de Shows Musicais">
+            </div>
+            <label for="tdMusicais" class="input-group-text">Shows Musicais</label>
+        </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="rdCinema" type="radio" name="sugestao" aria-label="Escolha de Cinema">
+            </div>
+            <label for="rdCinema" class="input-group-text">Cinema</label>
+        </div>
+    </div>
 
-    <script src="./js/sugerir-evento.js"></script>
-    <script src="./js/layout.js"></script>
-    <script src="./navbar.html" type="text/javascript"></script>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="rdEsporte" type="radio" name="sugestao" aria-label="Escolha de Esporte">
+            </div>
+            <label for="rdEsporte" class="input-group-text">Esporte</label>
+        </div>
+    </div>
 
-</body>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="tdJogos" type="radio" name="sugestao" aria-label="Escolha de Jogos">
+            </div>
+            <label for="tdJogos" class="input-group-text">Jogos</label>
+        </div>
+    </div>
 
-</html>
+    <div class="input-group form-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input id="rdOutros" type="radio" name="sugestao" aria-label="Escolha de Outra Categoria">
+            </div>
+            <label for="rdOutros" class="input-group-text">Outras</label>
+        </div>
+        <input type="text" class="form-control" aria-label="Digite a Outra Categoria" style="width: 250px"
+            placeholder="Digite a Outra Categoria">
+    </div>
+
+    <div class="form-group">
+        <button type="button" onclick="enviarSugestao();" class="btn btn-outline-success">Enviar</button>
+    </div>
+</div>
+`,'#bodyinject','./js/sugerir-evento.js');
