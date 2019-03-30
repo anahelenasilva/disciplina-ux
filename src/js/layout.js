@@ -57,7 +57,7 @@ function loadEvents() {
     $('a').unbind('click');
     $('a').bind('click', function(e) {
         var path = $(e.target).attr('href');
-        if(path == '#')
+        if(path.indexOf('#') != -1)
             return;
         e.preventDefault();
         load(true);
