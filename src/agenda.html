@@ -1,90 +1,22 @@
-<!doctype html>
-<html>
-
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/divulgar-evento.css" />
-    <link rel="stylesheet" href="./css/layout.css" />
-    <link rel="stylesheet" href="./css/sugerir-evento.css" />
-</head>
-
-<body>
-    <main role="main" class="flex-shrink-0">
-        <div id="navbar">Loading...</div>
-
-        <!-- Inicio Content -->
-        <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Agenda</li>
-                </ol>
-            </nav>
-            <div class="jumbotron">
-                <h1 class="display-4">Agenda de eventos</h1>
-                <p class="lead">Aqui você pode visualizar os eventos que irão ocorrer ou até mesmo os que já ocorreram, em forma de calendário.</p>
-                <hr class="my-4">
-                <p>Navegue no calendário e veja os eventos que estão rolando na sua cidade, clique neles para mais informações!</p>
-            </div>
-
-            <div id='calendar'></div>
-        </div>
-        <!-- Fim Content -->
-    </main>
-
-    <div class=" modal fade modal-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myLargeModalLabel">Página de Ajuda</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar Modal"><span
-                            aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-            </div>
-        </div>
+injectThis(`
+<!-- Inicio Content -->
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Agenda</li>
+        </ol>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-4">Agenda de eventos</h1>
+        <p class="lead">Aqui você pode visualizar os eventos que irão ocorrer ou até mesmo os que já ocorreram, em forma de calendário.</p>
+        <hr class="my-4">
+        <p>Navegue no calendário e veja os eventos que estão rolando na sua cidade, clique neles para mais informações!</p>
     </div>
-    <div class="loader"></div>
 
-    <!-- <footer class="footer py-3 mt-auto w-100 bg-light" style="text-align: center;">
-        <span>Divulgação de Eventos da cidade de São Carlos - SP</span>
-    </footer> -->
+    <div id='calendar'></div>
+</div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>    
-
-    <link href='../plugins/full-calendar/core/main.css' rel='stylesheet' />
-    <link href='../plugins/full-calendar/daygrid/main.css' rel='stylesheet' />
-    <script src='../plugins/full-calendar/core/main.js'></script>
-    <script src='../plugins/full-calendar/interaction/main.js'></script>
-    <script src='../plugins/full-calendar/daygrid/main.js'></script>
-    <script src='../plugins/full-calendar/core/locales/pt-br.js'></script>
-
-    <link href='./css/agenda.css' rel='stylesheet' />
-    <script src="./js/agenda.js"></script>
-    <script src="./js/layout.js"></script>
-    <script src="./navbar.html" type="text/javascript"></script>
-
-</body>
-
-</html>
+<link href='./css/agenda.css' rel='stylesheet' />
+<!-- Fim Content -->
+`,'#bodyinject','./js/agenda.js');

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+	<title>UFSCar</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,136 +15,158 @@
 </head>
 
 <body class="d-flex flex-column h-100">
-	<main role="main" class="flex-shrink-0">
-		<div id="navbar">Loading...</div>
+	<main class="flex-shrink-0">
+		<!-- Inicio Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="main-navbar">
+			<a class="navbar-brand" href="./index.html">
+				<img src="./assets/logo-topbar.png" width="130" height="50" alt="Logo da Aplicação">
+			</a>
+			<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-		<div class="container mt-4">
-			<nav aria-label="breadcrumb">
-				<ol class="breadcrumb">
-					<li class="breadcrumb-item active" aria-current="page">Home</li>
-				</ol>
-			</nav>
+			<div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item menu-item">
+						<a class="nav-link" href="./indexContent.html">Home <span class="sr-only">(current)</span></a>
+					</li>
 
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="assets/img/destaque1.png" class="d-block w-100" alt="Imagem de destaque de um evento">
-						<span class="small">Legenda: Imagem que está escrito "Evento de destaque 2"</span>
-					</div>
-					<div class="carousel-item">
-						<img src="assets/img/destaque2.png" class="d-block w-100" alt="Imagem de destaque de um evento">
-						<span class="small">Legenda: Imagem que está escrito "Evento de destaque 3"</span>
-					</div>
-					<div class="carousel-item">
-						<img src="assets/img/destaque3.png" class="d-block w-100" alt="Imagem de destaque de um evento">
-						<span class="small">Legenda: Imagem que está escrito "Evento de destaque 1"</span>
+					<li class="nav-item dropdown menu-item">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Eventos
+						</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-submenu">
+								<a class="dropdown-item" href="./eventos-categoria-cinema.html">Cinema</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-cinema.html">Infantil</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-cinema.html">Adulto</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a class="dropdown-item" href="./eventos-categoria-esportes.html">Esportes</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-esportes.html">Futebol</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-esportes.html">Voley</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-esportes.html">Basquete</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-esportes.html">Natação</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-esportes.html">Outros</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown-submenu">
+								<a class="dropdown-item" href="./eventos-categoria-musica.html">Música</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<a class="dropdown-item" href="./eventos-categoria-musica.html">Shows de
+											Rock</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item" href="./eventos-categoria-musica.html">Shows de
+											MPB</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item" href="./eventos-categoria-musica.html">Shows de
+											Sertanejo</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-musica.html">Outros</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown-submenu">
+								<a class="dropdown-item" href="./eventos-categoria-teatro.html">Teatro</a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-teatro.html">Infantil</a>
+									</li>
+									<li class="dropdown-item">
+										<a class="dropdown-item"
+											href="./eventos-categoria-teatro.html">Adulto</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="nav-item menu-item">
+						<a class="nav-link" href="agenda.html">Agenda</a>
+					</li>
+
+					<li class="nav-item menu-item">
+						<a class="nav-link" href="./divulgar-evento.html">Divulgação</a>
+					</li>
+
+					<li class="nav-item menu-item">
+						<a class="nav-link" href="./sugerir-evento.html">Sugestão</a>
+					</li>
+
+					<li class="nav-item menu-item">
+						<a class="nav-link" href="./sobre.html">Sobre</a>
+					</li>
+				</ul>
+
+
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+						<i class="fa fa-search" style="color: white" aria-hidden="true"></i>
+						Pesquisar
+					</button>
+				</form>
+				<div>
+					<div class="acessibilidade-font">
+						<ul class="acessibilidade clearfix">
+							<li style="font-size: 13px;">
+								<a href="#" title="Diminuir a fonte" class="decrease" rel="decrease-font"
+									style="font-size: 15px;">-A</a>
+							</li>
+							<li style="font-size: 13px;">
+								<a href="#" title="Aumentar a fonte" class="increase" rel="increase-font"
+									style="font-size: 19px;">+A</a>
+							</li>
+							<li>
+								<a href="#" class="btn btn-sm btn-dark" data-toggle="modal" data-target=".modal-help"><i
+										class="fas fa-question-circle"></i></a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Anterior</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Próximo</span>
-				</a>
+
 			</div>
+		</nav>
+		<!-- Fim navbar -->
 
-			<div class="row mt-5">
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 1</h5>
-							<p class="card-text">Texto do Evento 1</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 2</h5>
-							<p class="card-text">Texto do Evento 2</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 3</h5>
-							<p class="card-text">Texto do Evento 3</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-3">
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 4</h5>
-							<p class="card-text">Texto do Evento 4</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 5</h5>
-							<p class="card-text">Texto do Evento 5</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 6</h5>
-							<p class="card-text">Texto do Evento 6</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row mt-3 mb-3">
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 7</h5>
-							<p class="card-text">Texto do Evento 7</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 8</h5>
-							<p class="card-text">Texto do Evento 8</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Evento 9</h5>
-							<p class="card-text">Texto do Evento 9</p>
-							<a href="./detalhe-evento.html" class="btn btn-outline-success">Detalhes</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+		<!-- Body -->
+		<div id="bodyinject">Carregando Conteúdo...</div>
+		<!-- Fim Body -->
+		
 		<div class=" modal fade modal-help" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 			aria-hidden="true">
 			<div class="modal-dialog modal-lg">
@@ -170,6 +193,7 @@
         </div>
     </footer> -->
 
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
 	</script>
@@ -179,9 +203,22 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<link href='../plugins/full-calendar/core/main.css' rel='stylesheet' />
+    <link href='../plugins/full-calendar/daygrid/main.css' rel='stylesheet' />
+    <script src='../plugins/full-calendar/core/main.js'></script>
+    <script src='../plugins/full-calendar/interaction/main.js'></script>
+    <script src='../plugins/full-calendar/daygrid/main.js'></script>
+    <script src='../plugins/full-calendar/core/locales/pt-br.js'></script>
+
+
 	<script src="./js/layout.js"></script>
-	<script src="./navbar.html" type="text/javascript"></script>
+	
+	<section id="page-script">
+		<script src="./indexContent.html" type="text/javascript"></script>
+	</section>
 </body>
 
 </html>
