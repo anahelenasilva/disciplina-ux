@@ -1,0 +1,62 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-cinema.html">Cinema</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/dumbo.jpg" class="card-img-small m-2 w-25"  alt="Cartaz Dumbo">
+            <span class="small m-2">Legenda: Cartaz do Filme Dumbo"</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Cinema
+                    </p>
+                    <h5 class="card-title">
+                        Dumbo
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria livre">L</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        COM Colin Farrell, Nico Parker, Finley Hobbins, Danny De Vito, Michael Keaton e Eva GreenS
+                    </p>
+
+                    <p class="card-text">
+                        <strong>(Danny DeVito) é dono de um circo e convoca seu ex-astro do picadeiro, 
+                            Holt (Colin Farrell) e os filhos, para cuidarem do filhote de elefante que virou 
+                            piada devido ao tamanho das orelhas. Quando a carinhosa família descobre que o 
+                            pequeno Dumbo pode voar, ele vira um sucesso e o circo retorna aos holofotes. 
+                            Até que a atração voadora se torna objeto de desejo do empresário Vandevere 
+                            (Michael Keaton), dono do ambicioso projeto Dreamland, e ele convence o 
+                            velho Max a colocar Dumbo em um espetáculo aéreo junto com a bela Colette 
+                            (Eva Green). Mas os amigos do elefante voador descobrem que por trás do brilho 
+                            exuberante daquele local existem segredos obscuros. Inspirado no clássico conto.
+                            <br><br>
+                            Duração: 118 min
+                            <br><br>
+                            Horários:  Sala 1 - 14:00h, 18:00 e 22:00h Sala 2 - 15:00h e 19:00h 
+                        <br><br>
+                        <strong>Onde: Cinema Iguatemi</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="far fa-money-bill-alt"></i>
+                        <i class="fa fa-money"></i> Valores: Inteira R$ 30,00 Meia (Estudantes, Professores e Aposentados) R$ 15,00
+                    </p>
+                    
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

@@ -1,0 +1,51 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-esportes.html">Esportes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/futebol-varzea.jpg" class="card-img-small w-25 m-2"  alt="Campeonato de Futebol">
+            <span class="small m-2">Campeonato de Futebol"</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Cinema
+                    </p>
+                    <h5 class="card-title">
+                            Campeonato de Futebol
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria livre">L</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        
+                    </p>
+
+                    <p class="card-text">
+                        <strong>A Prefeitura através da Secretaria de esporte promove
+                            a segunda edição do Futebol Amador de São Carlos. Inscrições na Secretária de Esportes.
+                            <br><br>
+                            Quando: dia 28/04/2019 as 10:00h
+                        <br><br>
+                        <strong>Onde: Estadio José Silva</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="fas fa-gift"></i> Grátis
+                    </p>
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

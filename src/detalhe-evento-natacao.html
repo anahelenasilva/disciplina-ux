@@ -1,0 +1,52 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-esportes.html">Esportes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/natacao.jpg" class="card-img-small m-2 w-25"  alt="Aula de Natação">
+            <span class="small m-2">Aula de Natação</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Esportes
+                    </p>
+                    <h5 class="card-title">
+                            Aula de Natação
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria livre">L</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        
+                    </p>
+
+                    <p class="card-text">
+                        <strong>A Prefeitura através da Secretaria de esporte promove
+                            a décima edição do Piscina Aberta. Com aulas de Natação e piscina liberada para todos. 
+                            Inscrições na Secretária de Esportes. Usuários devem trazer atestado médico atualizado.
+                            <br><br>
+                            Quando: dia 05/05/2019 a partir das 09:00h
+                        <br><br>
+                        <strong>Onde: Piscina Municipal</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="fas fa-gift"></i> Grátis
+                    </p>
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

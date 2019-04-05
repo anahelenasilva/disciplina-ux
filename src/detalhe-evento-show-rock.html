@@ -1,0 +1,62 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-musica.html">Música</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/show-rock.jpg" class="card-img-small w-25 m-2"  alt="Banda Tarja Preta">
+            <span class="small m-2">Banda Tarja Preta</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Música
+                    </p>
+                    <h5 class="card-title">
+                            Banda Tarja Preta
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria doze">15</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        COM Bruno Marques (bateria), Guilherme Ambrósio (baixo), Celso Lopes (guitarra) e Jorge Segati (voz)
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Quem sobe ao palco prometendo “quebrar tudo” no Rock no Bosque é a banda Tarja Preta. 
+                            Com mais de 20 anos de estrada, algo raro para bandas independentes, eles exibem no currículo 
+                            participações em importantes festivais nacionais, além de terem dividido o palco com consagrados 
+                            artistas por todo o Brasil, como Titãs, Zé Ramalho, Raimundos, Capital Inicial, Ira!, 
+                            Ultraje a Rigor, Patrulha do Espaço e Matanza.
+                            Depois de dois CDs no mercado (Targuovectuo de Trevoriol e Língua Presa), a 
+                            banda traz para o Clube um novo show com canções inéditas de seu terceiro álbum, que deverá ser 
+                            lançado ainda este ano. Completarão o repertório interpretações de Elvis Presley, Erasmo Carlos, 
+                            Raul Seixas, Cartola, The Doors, Amy Winehouse, Ramones, Red Hot Chili Peppers, entre outros. 
+                            <br><br>
+                            Duração: 120 min
+                            <br><br>
+                            Quando 20/04/2019 Horário: 23:00h
+                        <br><br>
+                        <strong>Onde: São Carlos Clube </strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="far fa-money-bill-alt"></i>
+                        <i class="fa fa-money"></i> Valores: Inteira R$ 10,00 e Meia (Estudantes, Professores e Aposentados) R$ 5,00
+                    </p>
+                    
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

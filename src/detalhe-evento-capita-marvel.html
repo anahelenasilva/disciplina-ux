@@ -1,0 +1,59 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-cinema.html">Cinema</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/capita-marvel.jpg" class="card-img-small m-2 w-25"  alt="Capitã Marvel">
+            <span class="small m-2">Cartaz do Filme Capitã Marvel"</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Cinema
+                    </p>
+                    <h5 class="card-title">
+                        Capitã Marvel
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria doze">12</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        COM Brie Larson, Ben Mendelsohn, Clark Gregg, Djimon Hounsou, Gemma Chan, Jude Law
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Filme sobre a heroína Carol Danvers, também conhecida como Capitã Marvel. 
+                            Piloto da Força Aérea dos Estados Unidos, ela adquiriu seus poderes ao ser salva da 
+                            explosão de um maquinário kree pelo primeiro Capitão Marvel. Porém, a radiação atingiu 
+                            seu corpo em nível celular e Carol se tornou uma híbrida genética kree/humana, adquirindo 
+                            superforça, poder de vôo e um “sétimo sentido” (similar, porém mais poderoso que o “normal” 
+                            sexto sentido). Assim, ela iniciou uma carreira de heroína como Capitã Marvel, entrando para o grupo dos Vingadores.
+                            <br><br>
+                            Duração: 128 min
+                            <br><br>
+                            Horários:  Sala 3 - 14:00h, 18:00 e 22:00h Sala 4 - 15:00h e 19:00h 
+                        <br><br>
+                        <strong>Onde: Cinema Iguatemi</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="far fa-money-bill-alt"></i>
+                        <i class="fa fa-money"></i> Valores: Inteira R$ 30,00 Meia (Estudantes, Professores e Aposentados) R$ 15,00
+                    </p>
+                    
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

@@ -1,0 +1,58 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-cinema.html">Cinema</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/cinco-passos.jpg" class="card-img-small w-25 m-2"  alt="A Cinco Passos de Você">
+            <span class="small m-2">Cartaz do Filme A Cinco Passos de Você"</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Cinema
+                    </p>
+                    <h5 class="card-title">
+                            A Cinco Passos de Você
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria doze">12</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        COM Cole Sprouse, Haley Lu Richardson, Claire Forlani
+                    </p>
+
+                    <p class="card-text">
+                        <strong>Stella tem quase dezessete anos e, depois de viver a maior parte de 
+                            sua vida no hospital, encontra o charmoso Will Newman, também um paciente 
+                            com fibrose cística. Embora surja uma paixão instantânea entre os dois, 
+                            suas condições de saúde impedem que eles cheguem muito perto um do outro, 
+                            e Stella tenta ajudar Will, que se rebela contra seus tratamentos médicos.
+                            <br><br>
+                            Duração: 116 min
+                            <br><br>
+                            Horários:  Sala 1 - 14:00h, 18:00 e 22:00h Sala 2 - 15:00h e 19:00h 
+                        <br><br>
+                        <strong>Onde: Cinema Iguatemi</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="far fa-money-bill-alt"></i>
+                        <i class="fa fa-money"></i> Valores: Inteira R$ 30,00 Meia (Estudantes, Professores e Aposentados) R$ 15,00
+                    </p>
+                    
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

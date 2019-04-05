@@ -1,0 +1,51 @@
+injectThis(`
+<div class="container mt-4 ml-5">
+        <link rel="stylesheet" href="./css/detalhe-evento.css" />    
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="indexContent.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="eventos-categoria-esportes.html">Esportes</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Detalhe do Evento</li>
+        </ol>
+    </nav>
+
+
+    <div class="conteudo">
+        <div class="card mb-3">
+            <img src="assets/eventos/voley.jpg" class="card-img-small w-25 m-2"  alt="Campeonato de Voleibol">
+            <span class="small m-2">Campeonato de Voleibol"</legenda>
+                <div class="card-body">
+                    <p class="small tipo-evento">
+                        Esportes
+                    </p>
+                    <h5 class="card-title">
+                        Campeonato de Voleibol
+                        <span class="classificacao_etaria_wrap">
+                            <span title="Livre para todos os públicos"
+                                class="classificacao_etaria livre">L</span>
+                        </span>
+                    </h5>
+                    <p class="small">
+                        
+                    </p>
+
+                    <p class="card-text">
+                        <strong>A equipe de Voleibol de São Carlos enfrenta Araraquara pelos
+                            jogos abertos do interior 2019.
+                            <br><br>
+                            Quando: dia 01/05/2019 as 10:00h
+                        <br><br>
+                        <strong>Onde: Ginásio Municipal</strong> <br>
+                        <br>
+                        
+                    </p>
+                    <p class="card-text">
+                            <i class="fas fa-gift"></i> Grátis
+                    </p>
+                </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+`,'#bodyinject','./js/detalhe-evento.js');

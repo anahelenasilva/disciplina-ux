@@ -21,6 +21,10 @@ span.classificacao_etaria.livre {
     background: #23a82f;
 }
 
+span.classificacao_etaria.doze {
+    background: yellow;
+}
+
 .tipo-evento {
     font-weight: bold;
     display: block;
