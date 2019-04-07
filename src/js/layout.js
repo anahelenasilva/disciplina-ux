@@ -29,6 +29,12 @@ function acessibilidade() {
 
 $(document).ready(function(){
     loadEvents();
+
+    jQuery.expr[':'].contains = function(a, i, m) {
+        return jQuery(a).text().toUpperCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, "")
+            .indexOf(m[3].toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "")) >= 0;
+    };
 });
 
 $(window).load(function() {
@@ -68,6 +74,11 @@ function loadEvents() {
          
     });
     acessibilidade();
+    $(document).on('keyup','#filtro',function(e){
+        if(e.keyCode == 13){
+            $('#filtrar').click();
+        }
+    })
 }
 
 function load(show) {
@@ -76,3 +87,18 @@ function load(show) {
     else
         $(".loader").fadeOut("medium");    
 }
+
+function filtrar(){
+    const filtro = $('#filtro').val();
+    $('.js-filtro').find('.col-sm-4').addClass('d-none');
+    $('.js-not-found').hide();
+
+    let list = $('.card-title:contains("' + filtro + '")');    
+    if(list.size() > 0){
+        list.each(function(){$(this).closest('.col-sm-4').removeClass('d-none')});
+    }else{
+        $('.js-termo-pedquisado').text('"' + filtro + '"');
+        $('.js-not-found ').show();
+    }    
+}
+
