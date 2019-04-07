@@ -34,3 +34,7 @@ ul.acessibilidade li a {
     background: url('../assets/img/loader.gif') 50% 50% no-repeat rgb(249,249,249);
     opacity: .8;
 }
+
+.card {
+    margin-bottom: 20px;
+}
